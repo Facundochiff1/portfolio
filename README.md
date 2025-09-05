@@ -1,1 +1,1 @@
-portfolio-three-wheat-98.vercel.app
+https://portfolio-three-wheat-98.vercel.app/
