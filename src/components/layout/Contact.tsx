@@ -21,16 +21,17 @@ export function Contact () {
     const [ subject, setSubject ] = useState("")
     const [ message, setMessage ] = useState("")
     const [ succes, setSucces ] = useState(false)
+    // const [ isValidName, setIsValidName ] = useState(false)
 
     return (
         <section className="relative flex flex-col items-center justify-center mb-22">
             {succes && 
-            <p className="fixed top-[71px] right-[5px] bg-green-200 text-green-800 px-4 py-5 animate-slide-in-right">
+            <p id="succes-text" className="fixed top-[65px] right-0 bg-green-200 text-green-800 px-4 py-5 animate-slide-in-right rounded-b rounded-l rounded-tl">
                 ✅ Form submitted successfully
             </p>
             }
             <h1 className="pb-8 text-4xl text-black font-bold w-[550px] text-left">Contact Me</h1>
-            <form onSubmit={onSubmitForm} className="w-[550px] h-[600px] shadow-lg border border-amber-500 rounded-lg p-8 flex flex-col items-center gap-9">
+            <form onSubmit={onSubmitForm} className="w-[550px] h-[600px] shadow-xl border border-amber-500 rounded-lg p-8 flex flex-col items-center gap-9">
                 <div className="relative flex flex-col items-start justify-center w-full">
                     <label className="absolue top-1">Name</label>
                     <input onChange={(e) => setName(e.target.value)} value={name} type="text" className="border w-full h-[40px] rounded-md p-2"/>

@@ -8,7 +8,7 @@ import { Skills } from './components/layout/Skills'
 
 function App() {
   return (
-    <div className="min-h-screen w-full flex flex-col scroll-smooth">
+    <div className="min-h-screen mx-auto flex flex-col scroll-smooth">
       <Navbar />
       <Home />
       <About />

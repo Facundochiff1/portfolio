@@ -2,15 +2,15 @@ import { assets } from "../../assets/assets";
 
 export function Home () {
     return (
-        <main className="min-h-screen bg-white flex w-[1300px] justify-between items-center">
-            <div className="text-start">
-                <h1 className="text-6xl font-bold">Create.</h1>
-                <h1 className="text-6xl font-bold text-gray-600">Connect.</h1>
-                <h1 className="text-6xl font-bold text-amber-500">Grow.</h1>
-                <p className="mt-8 text-[22px] text-gray-700 font- max-w-md">
+        <main className="min-h-screen bg-white flex w-auto lg:justify-between items-center">
+            <div className="lg:text-start ">
+                <h1 className="text-5xl lg:text-6xl font-bold">Create.</h1>
+                <h1 className="text-5xl lg:text-6xl font-bold text-gray-600">Connect.</h1>
+                <h1 className="text-5xl lg:text-6xl font-bold text-amber-500">Grow.</h1>
+                <p className="mt-8 text-[19px] text-gray-700 font- max-w-md lg:text-[22px] w-[370px] lg:w-full">
                     I'm Facundo, a frontend web developer specialized in building fast and efficient web applications.
                 </p>
-                <div className="flex gap-6">
+                <div className="flex gap-6 justify-center items-center lg:justify-start">
                     <a href="https://github.com/Facundochiff1">
                         <img className="w-10 h-10 mt-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub link" />
                     </a>
@@ -21,11 +21,10 @@ export function Home () {
             </div>
 
             <div>
-                <div className="w-[700px] h-[500px] flex items-center justify-center">
+                <div className="hidden lg:w-[700px] lg:h-[500px] lg:flex items-center justify-center">
                     <img src={assets.background_image} alt="" />
                 </div>
             </div>
-
         </main>
     )
 }

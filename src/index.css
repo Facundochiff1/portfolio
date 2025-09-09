@@ -17,3 +17,20 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+#succes-text {
+  animation: show-succes .3s;
+}
+
+@keyframes show-succes {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes show {
+  
+}
